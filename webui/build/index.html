@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+				<!-- SMUI Styles -->
+		<link rel="stylesheet" href="./smui.css" />
+		<!-- Hint where we get fonts from. -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- Roboto, and Roboto Mono fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Material Icons fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap"
+			rel="stylesheet"
+		/>
+
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BiL_f0YS.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.WB1GK1R_.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.BGTSHx9J.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.xMXQIhPJ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.D6enODF7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.B1xNMk-p.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.D2AZnYlT.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <h1 data-svelte-h="svelte-yyjjjs">Welcome to SvelteKit</h1> <p data-svelte-h="svelte-jl9sbz">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p> <h1 data-svelte-h="svelte-2s3hz2">Machine State</h1> <p>Machine state: off</p> <p>metal: 0°C<br>
+	goal:undefined°C<br>
+	steam:undefined°C <br>
+	pressure: undefined bar <br>
+	flow: undefined ml/s<br></p> 
+			
+			<script>
+				{
+					__sveltekit_1ctqay8 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BiL_f0YS.js"),
+						import("./_app/immutable/entry/app.xMXQIhPJ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
